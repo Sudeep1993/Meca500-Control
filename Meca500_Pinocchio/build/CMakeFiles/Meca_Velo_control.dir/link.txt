@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/Meca_Velo_control.dir/examples/Meca_Velo_control.cpp.o -o Meca_Velo_control  libsocket_comm.a librobot_interface.a 

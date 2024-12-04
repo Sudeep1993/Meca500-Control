@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/Meca_Move.dir/examples/Meca_Move.cpp.o -o Meca_Move  libsocket_comm.a librobot_interface.a 

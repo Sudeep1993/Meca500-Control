@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/Meca_Connection_Check.dir/examples/Meca_Connection_Check.cpp.o -o Meca_Connection_Check  libsocket_comm.a librobot_interface.a 

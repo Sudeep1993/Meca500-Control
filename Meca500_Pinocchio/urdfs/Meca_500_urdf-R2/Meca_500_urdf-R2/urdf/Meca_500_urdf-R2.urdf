@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Meca_500_urdf-R2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0109725926516317 -3.46278567973224E-05 0.0406988742963083"
+        rpy="0 0 0" />
+      <mass
+        value="0.679568964786532" />
+      <inertia
+        ixx="0.000791499105710204"
+        ixy="-1.53445323469656E-06"
+        ixz="-9.63525565936512E-05"
+        iyy="0.00102263165745737"
+        iyz="-8.71161209217454E-08"
+        izz="0.000929221686108281" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Joint 1">
+    <inertial>
+      <origin
+        xyz="2.59955725218788E-07 0.0450294391279362 0.0425774807786145"
+        rpy="0 0 0" />
+      <mass
+        value="3.11068100178968E-05" />
+      <inertia
+        ixx="4.26029818725007E-11"
+        ixy="7.2157560582102E-15"
+        ixz="-1.23495683143256E-15"
+        iyy="5.71232812132584E-11"
+        iyz="5.68938761738752E-16"
+        izz="4.26011049884299E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/Joint 1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.749019607843137 0.749019607843137 0.749019607843137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/Joint 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.09"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Joint 1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.054"
+      upper="3.054"
+      effort="8"
+      velocity="2.62" />
+  </joint>
+  <link
+    name="joint 2">
+    <inertial>
+      <origin
+        xyz="4.45170865147998E-07 -0.134998467546097 0.0468908327323897"
+        rpy="0 0 0" />
+      <mass
+        value="1.04498871300878E-06" />
+      <inertia
+        ixx="1.26193540310527E-12"
+        ixy="2.27190794086569E-15"
+        ixz="2.04571838642606E-17"
+        iyy="1.27062997059495E-12"
+        iyz="6.77569314255402E-17"
+        izz="2.52652987744516E-12" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/joint 2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/joint 2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0.045"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="Joint 1" />
+    <child
+      link="joint 2" />
+    <axis
+      xyz="0.0042014780162664 0 -0.999991173752288" />
+    <limit
+      lower="-1.221"
+      upper="1.57"
+      effort="8"
+      velocity="2.62" />
+  </joint>
+  <link
+    name="joint 3">
+    <inertial>
+      <origin
+        xyz="0.0135354032001702 0.00944289577089366 -0.000217016596164697"
+        rpy="0 0 0" />
+      <mass
+        value="0.374066907571865" />
+      <inertia
+        ixx="0.000286509634935843"
+        ixy="-7.47439512312064E-05"
+        ixz="-4.0271121494669E-06"
+        iyy="0.000366719487688141"
+        iyz="-8.36688974073381E-07"
+        izz="0.000467308668091846" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/joint 3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/joint 3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0 -0.135 0"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="joint 2" />
+    <child
+      link="joint 3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.356"
+      upper="1.221"
+      effort="8"
+      velocity="3.141" />
+  </joint>
+  <link
+    name="joint 4">
+    <inertial>
+      <origin
+        xyz="-0.000441520439316889 -0.0222202334471038 0.0590314255012927"
+        rpy="0 0 0" />
+      <mass
+        value="2.47385882658862E-05" />
+      <inertia
+        ixx="1.67083069930542E-11"
+        ixy="4.09830001639555E-16"
+        ixz="-1.65644270357971E-16"
+        iyy="1.98526405634069E-11"
+        iyz="5.33957075787515E-15"
+        izz="1.60462056103317E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/joint 4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/joint 4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0.037999999999999 0.0615000000000004 0"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="joint 3" />
+    <child
+      link="joint 4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2.967"
+      upper="2.967"
+      effort="8"
+      velocity="5.236" />
+  </joint>
+  <link
+    name="Joint 5">
+    <inertial>
+      <origin
+        xyz="-3.24650848471109E-06 0.021035700815464 -0.000373731207070131"
+        rpy="0 0 0" />
+      <mass
+        value="0.170739355398552" />
+      <inertia
+        ixx="0.00012857340395589"
+        ixy="9.09086598001449E-10"
+        ixz="3.34007889091522E-10"
+        iyy="5.6926439828127E-05"
+        iyz="7.83468804468554E-07"
+        izz="0.000124001479243261" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/Joint 5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/Joint 5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0585"
+      rpy="1.5708 0 0" />
+    <parent
+      link="joint 4" />
+    <child
+      link="Joint 5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.007"
+      upper="2.007"
+      effort="8"
+      velocity="5.236" />
+  </joint>
+  <link
+    name="Joint 6">
+    <inertial>
+      <origin
+        xyz="7.7715611723761E-16 4.21936767723738E-16 -0.0220973177991802"
+        rpy="0 0 0" />
+      <mass
+        value="0.0944639400304876" />
+      <inertia
+        ixx="1.41370013471337E-05"
+        ixy="2.24632303291947E-08"
+        ixz="4.5012231119807E-21"
+        iyy="1.41988373153341E-05"
+        iyz="4.00940575698352E-20"
+        izz="1.00774973694868E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/Joint 6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.501960784313725 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/Joint 6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="0 0.07 0"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="Joint 5" />
+    <child
+      link="Joint 6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.283"
+      upper="6.283"
+      effort="8"
+      velocity="8.727" />
+  </joint>
+  <link
+    name="Needle tip">
+    <inertial>
+      <origin
+        xyz="0.0347344445350091 -0.00374194889796238 0.0593600383669868"
+        rpy="0 0 0" />
+      <mass
+        value="0.0212500714187753" />
+      <inertia
+        ixx="1.72298495867314E-05"
+        ixy="3.3165728409469E-07"
+        ixz="-5.31858512593133E-06"
+        iyy="1.70489918204971E-05"
+        iyz="5.55202018835342E-07"
+        izz="8.64592251603609E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/Needle tip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Meca_500_urdf-R2/meshes/Needle tip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Needle tip"
+    type="fixed">
+    <origin
+      xyz="0.05788 0.0125 0.09155"
+      rpy="3.1416 0 -3.1416" />
+    <parent
+      link="Joint 6" />
+    <child
+      link="Needle tip" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
